@@ -1,0 +1,160 @@
+
+.sidebar {
+  position: relative;
+  width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-width: none;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+
+.header {
+  padding: 20px 24px;
+ 
+  
+  background-color: #ffffff;
+}
+
+.title {
+  margin: 0;
+  padding-top:10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.groupContainer {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.groupList {
+  list-style: none;
+  padding: 12px 0;
+  margin: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.groupItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  border: none;
+  position: relative;
+}
+
+.groupItem:hover {
+  background-color: #f8fafc;
+}
+
+.groupItem.active {
+  background-color: #6262621b;
+  border-radius: 11px;
+  
+
+}
+
+
+
+.avatar {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.groupName {
+  font-size: 16px;
+  color: #374151;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.floatingBtn {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.floatingBtn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.floatingBtn:active {
+  transform: scale(0.95);
+}
+
+
+.groupList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.groupList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.groupList::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.groupList::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+  
+  .floatingBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+}

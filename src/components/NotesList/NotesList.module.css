@@ -1,0 +1,90 @@
+.notesContainer {
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.noteCard {
+  padding: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #000;
+  background-color: #FFF;
+}
+
+.notesList {
+  flex: 1;
+  padding: 20px;
+
+  overflow-y: auto;
+}
+
+.noteText {
+  margin-bottom: 8px;
+}
+
+.meta {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyState {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.header{
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  background-color: #09328b;
+}
+
+.avatar {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.groupName {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.backButton{
+  display: none;
+  background-color: none;
+}
+
+@media (max-width: 768px) {
+  .backButton {
+    display: block;
+  }
+}
