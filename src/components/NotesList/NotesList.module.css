@@ -8,12 +8,13 @@
 }
 
 .noteCard {
+
   padding: 12px;
   margin-bottom: 15px;
   width: 100%;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: #000;
+
   background-color: #FFF;
 }
 

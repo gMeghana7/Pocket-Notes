@@ -22,7 +22,7 @@ const NoteEditor = ({ onSend }) => {
     <div className={styles.editor}>
       <input
         type="text"
-        placeholder="Enter your text here..."
+        placeholder="Type your note..."
         value={text}
         onChange={(e) => setText(e.target.value)}
         onKeyDown={handleKeyDown}
@@ -38,3 +38,5 @@ const NoteEditor = ({ onSend }) => {
 };
 
 export default NoteEditor;
+
+
